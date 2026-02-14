@@ -41,8 +41,8 @@
       "location_type": "On-site",
       "location": "KR",
       "url": "",
-      "startDate": "2023-01-01",
-      "endDate": null,
+      "startDate": "yy-mm-dd",
+      "endDate": "yy-mm-dd",
       "summary": "Developed and maintained game features and gameplay systems.",
       "responsibilities": [
         "Implemented gameplay features with C# and Unity.",
@@ -62,8 +62,8 @@
       "location_type": "On-site",
       "location": "KR",
       "url": "",
-      "startDate": "2021-01-01",
-      "endDate": "2022-12-31",
+      "startDate": "yy-mm-dd",
+      "endDate": "yy-mm-dd",
       "summary": "Built gameplay tools and features for live game services.",
       "responsibilities": [
         "Developed gameplay and engine-side features using C++ and Unreal.",
@@ -82,8 +82,8 @@
       "location_type": "On-site",
       "location": "KR",
       "url": "",
-      "startDate": "2019-01-01",
-      "endDate": "2020-12-31",
+      "startDate": "yy-mm-dd",
+      "endDate": "yy-mm-dd",
       "summary": "Implemented gameplay modules and development tools.",
       "responsibilities": [
         "Built and maintained gameplay code with Unity and C#.",
