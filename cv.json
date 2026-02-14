@@ -43,7 +43,7 @@
       "url": "",
       "startDate": "yy-mm-dd",
       "endDate": "yy-mm-dd",
-      "summary": "Developed and maintained game features and gameplay systems.",
+      "summary": "",
       "responsibilities": [
         "Implemented gameplay features with C# and Unity.",
         "Improved game performance and stability across releases.",
@@ -64,7 +64,7 @@
       "url": "",
       "startDate": "yy-mm-dd",
       "endDate": "yy-mm-dd",
-      "summary": "Built gameplay tools and features for live game services.",
+      "summary": "",
       "responsibilities": [
         "Developed gameplay and engine-side features using C++ and Unreal.",
         "Worked on bug fixing and optimization for production builds.",
@@ -84,7 +84,7 @@
       "url": "",
       "startDate": "yy-mm-dd",
       "endDate": "yy-mm-dd",
-      "summary": "Implemented gameplay modules and development tools.",
+      "summary": "",
       "responsibilities": [
         "Built and maintained gameplay code with Unity and C#.",
         "Wrote reusable systems for game logic and content workflows.",
