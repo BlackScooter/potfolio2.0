@@ -13,10 +13,11 @@ export interface Props {
 
 const { 
 	title,
-	description = "Interactive Neovim-themed portfolio interface showcasing Anmol Singh's projects and experience. A keyboard-friendly, terminal-inspired alternative view of a full-stack developer's portfolio featuring e-commerce, music streaming, and social media applications."
+	description = `Interactive Neovim-themed portfolio interface showcasing ${CV.basics.name}'s projects and experience.`
 } = Astro.props;
 
 const { url, image, name, location } = CV.basics;
+const siteUrl = url || "";
 const { city, region } = location;
 
 // Create structured data for the Neovim interface
@@ -25,7 +26,7 @@ const structuredData = {
   "@type": "WebApplication",
   "name": `${name}'s Neovim Portfolio`,
   "description": description,
-  "url": `${url}/neovim`,
+  "url": `${siteUrl}/neovim`,
   "applicationCategory": "Portfolio",
   "operatingSystem": "Any",
   "offers": {
@@ -41,7 +42,7 @@ const structuredData = {
       "@type": "PostalAddress",
       "addressLocality": city,
       "addressRegion": region,
-      "addressCountry": "IN"
+      "addressCountry": location.countryCode
     }
   }
 };
@@ -54,11 +55,11 @@ const keywords = [
   "Developer Portfolio",
   name,
   CV.basics.label,
-  "Web Development",
-  "Full Stack Developer",
+  "Game Development",
+  "Game Developer",
   city,
   region,
-  "India"
+  location.countryCode
 ];
 ---
 
@@ -74,11 +75,11 @@ const keywords = [
 	<meta name="description" content={description} />
 	<meta name="author" content={name} />
 	<meta name="keywords" content={keywords.join(", ")} />
-	<meta name="geo.region" content="IN-HR" />
+	<meta name="geo.region" content={location.countryCode} />
 	<meta name="geo.placename" content={city} />
 	
 	<!-- Canonical URL -->
-	<link rel="canonical" href={`${url}/neovim`} />
+	<link rel="canonical" href={`${siteUrl}/neovim`} />
 	
 	<!-- Favicon -->
 	<link rel="icon" type="image/svg+xml" href="/neovim.webp" />
@@ -86,17 +87,17 @@ const keywords = [
 	
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content={`${url}/neovim`} />
+	<meta property="og:url" content={`${siteUrl}/neovim`} />
 	<meta property="og:title" content={title} />
 	<meta property="og:description" content={description} />
 	<meta property="og:image" content={image} />
 	<meta property="og:site_name" content={`${name}'s Neovim Portfolio`} />
-	<meta property="og:locale" content="en_IN" />
+	<meta property="og:locale" content="en_US" />
 	
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:domain" content={url.split("//")[1] ?? ""} />
-	<meta name="twitter:url" content={`${url}/neovim`} />
+	<meta name="twitter:domain" content={siteUrl.split("//")[1] ?? ""} />
+	<meta name="twitter:url" content={`${siteUrl}/neovim`} />
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={description} />
 	<meta name="twitter:image" content={image} />
