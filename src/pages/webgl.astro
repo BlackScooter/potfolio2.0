@@ -1,0 +1,31 @@
+---
+import Layout from "@layouts/Layout.astro";
+---
+
+<Layout title="BlackScooter | WebGL Game">
+  <main class="mx-auto flex min-h-screen w-full max-w-7xl flex-col gap-6 p-6 md:p-10">
+    <header class="space-y-2">
+      <h1 class="text-3xl font-bold text-skin-base">WebGL Game Project</h1>
+      <p class="text-sm text-skin-muted">
+        This page is reserved for your WebGL build. Put your game build in
+        <code>/public/webgl-build/</code> and ensure the entry file is
+        <code>index.html</code>.
+      </p>
+    </header>
+
+    <section class="rounded-md border border-skin-muted bg-skin-button-muted/40 p-2 md:p-3">
+      <iframe
+        title="WebGL Game"
+        src="/webgl-build/index.html"
+        class="h-[70vh] w-full rounded-md bg-black"
+        loading="lazy"
+        allowfullscreen
+      />
+    </section>
+
+    <p class="text-xs text-skin-muted">
+      If the game does not load yet, upload build files to
+      <code>public/webgl-build/</code>.
+    </p>
+  </main>
+</Layout>
