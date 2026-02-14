@@ -1,52 +1,31 @@
-# Portfolio.dev
+# BlackScooter Portfolio
 
-This is a personal portfolio website built with Astro, TypeScript, and Tailwind CSS. It features a unique Neovim-inspired theme and includes sections for About, Experience, Education, Skills, and Projects.
+개인 포트폴리오 웹사이트 저장소입니다.  
+Astro 기반이며, 주요 콘텐츠는 `cv.json`에서 관리합니다.
 
-## Features
+## Stack
 
-*   **Neovim-inspired theme:** A unique theme that mimics the look and feel of the Neovim editor.
-*   **Multiple Sections:** Includes sections for About, Experience, Education, Skills, and Projects.
-*   **Responsive Design:** The website is designed to be responsive and work on all devices.
-*   **Live CV:** The portfolio data is sourced from a `cv.json` file, making it easy to update.
+- Astro
+- TypeScript
+- Tailwind CSS
 
-## Tech Stack
+## 로컬 실행
 
-*   **Astro:** The web framework for building the website.
-*   **TypeScript:** For type safety and improved developer experience.
-*   **Tailwind CSS:** For styling the website.
-*   **React:** Used for some interactive components.
-*   **Vercel:** For deployment.
-
-## Getting Started
-
-To get a local copy up and running, follow these simple steps.
-
-### Prerequisites
-
-*   Node.js (v22.x or later)
-*   npm
-
-### Installation
-
-1.  Clone the repo
-    ```sh
-    git clone https://github.com/Anmol-TheDev/potfolio2.0
-    ```
-2.  Install NPM packages
-    ```sh
-    pnpm install
-    ```
-
-### Running the Development Server
-
-To run the development server, use the following command:
-
-```sh
+```bash
+pnpm install
 pnpm run dev
 ```
 
-This will start the development server at `http://localhost:4321`.
+기본 주소: `http://localhost:4321`
 
-## License
+## 빌드
 
-Distributed under the MIT License. See `LICENSE` for more information.
+```bash
+pnpm run build
+```
+
+## 콘텐츠 수정
+
+- 기본 프로필/경력/기술스택: `cv.json`
+- 레이아웃/메타 태그: `src/layouts/`
+- 섹션 UI: `src/components/sections/`
